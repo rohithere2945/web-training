@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            color: #1877f2;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input-group input {
+            width: 48%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-group input[type="radio"] {
+            width: auto;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #1877f2;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #165e99;
+        }
+
+        .terms-container {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #65676b;
+        }
+
+        .terms-container a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .form-footer {
+            margin-top: 20px;
+        }
+
+        .form-footer a {
+            color: #1877f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Facebook</h2>
+        <form action="your-signup-handler" method="post">
+            <!-- Name Fields -->
+            <div class="input-group">
+                <input type="text" name="firstname" placeholder="First name" required>
+                <input type="text" name="lastname" placeholder="Last name" required>
+            </div>
+
+            <!-- Email Fields -->
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Mobile number or email" required>
+                <input type="email" name="email-confirm" placeholder="Re-enter email" required>
+            </div>
+
+            <!-- Password Field -->
+            <input type="password" name="password" placeholder="New password" required>
+
+            <!-- Date of Birth -->
+            <div class="input-group">
+                <select name="birthday-day" required>
+                    <option value="">Day</option>
+                    <!-- Options for days 1-31 -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <!-- Add all days... -->
+                </select>
+                <select name="birthday-month" required>
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <!-- Add other months... -->
+                </select>
+                <select name="birthday-year" required>
+                    <option value="">Year</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <!-- Add years... -->
+                </select>
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="input-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+
+            <!-- Terms and Privacy Link -->
+            <div class="terms-container">
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a>, and <a href="#">Cookie Policy</a>.
+            </div>
+        </form>
+
+        <div class="form-footer">
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
